@@ -1,0 +1,122 @@
+.programs-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('../images/programs-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.programs-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.program-section {
+    padding: 5rem 0;
+}
+
+.bg-light {
+    background-color: var(--light-color);
+}
+
+.program-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.program-content.reverse {
+    direction: rtl;
+}
+
+.program-content.reverse .program-info {
+    direction: ltr;
+}
+
+.program-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.program-description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.program-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.program-features li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.program-features i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.program-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+}
+
+.btn-program {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-program:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .programs-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .program-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .program-content.reverse {
+        direction: ltr;
+    }
+
+    .program-image img {
+        height: 300px;
+    }
+} 

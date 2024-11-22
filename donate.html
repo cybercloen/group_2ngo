@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Hope Foundation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/donate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Include header from index.html -->
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/hope-logo.png" alt="Hope Foundation Logo">
+                <span>The Helping Hand Foundation</span>
+            </div>
+            <div class="donate-button">
+                <a href="donate.html" class="btn-donate">Donate Now</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">Our Mission</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section class="donation-hero">
+            <h1>Make a Difference Today</h1>
+            <p>Your donation helps provide shelter, food, and support to those in need</p>
+        </section>
+
+        <section class="donation-options">
+            <div class="donation-container">
+                <div class="donation-tabs">
+                    <button class="tab-btn active" data-tab="one-time">One-Time Donation</button>
+                    <button class="tab-btn" data-tab="monthly">Monthly Donation</button>
+                </div>
+
+                <form id="donation-form" class="donation-form">
+                    <div class="amount-options">
+                        <h3>Select Amount</h3>
+                        <div class="preset-amounts">
+                            <button type="button" class="amount-btn" data-amount="25">$25</button>
+                            <button type="button" class="amount-btn" data-amount="50">$50</button>
+                            <button type="button" class="amount-btn active" data-amount="100">$100</button>
+                            <button type="button" class="amount-btn" data-amount="250">$250</button>
+                            <button type="button" class="amount-btn" data-amount="500">$500</button>
+                            <div class="custom-amount">
+                                <input type="number" id="custom-amount" placeholder="Custom Amount" min="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="allocation-options">
+                        <h3>Allocate Your Donation</h3>
+                        <select id="allocation" required>
+                            <option value="general">General Fund</option>
+                            <option value="shelter">Emergency Shelter</option>
+                            <option value="food">Food Bank</option>
+                            <option value="healthcare">Healthcare Services</option>
+                            <option value="education">Education & Job Training</option>
+                        </select>
+                    </div>
+
+                    <div class="donor-info">
+                        <h3>Your Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName">First Name*</label>
+                                <input type="text" id="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name*</label>
+                                <input type="text" id="lastName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-info">
+                        <h3>Payment Information</h3>
+                        <div class="card-element">
+                            <!-- Stripe or other payment processor elements will go here -->
+                            <div class="form-group">
+                                <label for="card-number">Card Number*</label>
+                                <input type="text" id="card-number" required>
+                            </div>
+                            <div class="card-details">
+                                <div class="form-group">
+                                    <label for="expiry">Expiry Date*</label>
+                                    <input type="text" id="expiry" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV*</label>
+                                    <input type="text" id="cvv" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="donation-summary">
+                        <h3>Donation Summary</h3>
+                        <div class="summary-details">
+                            <p>Amount: <span id="summary-amount">$100.00</span></p>
+                            <p>Frequency: <span id="summary-frequency">One-time</span></p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Complete Donation</button>
+                </form>
+            </div>
+
+            <div class="donation-sidebar">
+                <div class="impact-card">
+                    <h3>Your Impact</h3>
+                    <ul>
+                        <li><i class="fas fa-bed"></i> $25 provides one night of shelter</li>
+                        <li><i class="fas fa-utensils"></i> $50 feeds a family for a week</li>
+                        <li><i class="fas fa-heartbeat"></i> $100 provides medical care</li>
+                        <li><i class="fas fa-graduation-cap"></i> $250 supports job training</li>
+                    </ul>
+                </div>
+                <div class="secure-donation">
+                    <i class="fas fa-lock"></i>
+                    <p>Your donation is secure and encrypted</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include footer from index.html -->
+    
+    <script src="js/donate.js"></script>
+</body>
+</html> 

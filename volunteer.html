@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Hope Foundation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/volunteer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header from index.html -->
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/hope-logo.png" alt="Hope Foundation Logo">
+                <span>Hope Foundation</span>
+            </div>
+            <div class="donate-button">
+                <a href="donate.html" class="btn-donate">Donate Now</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">Our Mission</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="volunteer-hero">
+            <div class="hero-content">
+                <h1>Make a Difference</h1>
+                <p>Join our community of volunteers and help create positive change</p>
+            </div>
+        </section>
+
+        <section class="opportunities">
+            <div class="container">
+                <h2>Current Volunteer Opportunities</h2>
+                <div class="opportunities-grid">
+                    <div class="opportunity-card">
+                        <div class="card-header">
+                            <i class="fas fa-utensils"></i>
+                            <span class="time-commitment">4-8 hours/week</span>
+                        </div>
+                        <h3>Food Bank Assistant</h3>
+                        <p>Help sort, package, and distribute food to those in need. Training provided.</p>
+                        <ul class="requirements">
+                            <li><i class="fas fa-clock"></i> Weekdays 9AM-5PM</li>
+                            <li><i class="fas fa-users"></i> No experience needed</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Main Center</li>
+                        </ul>
+                        <a href="#volunteer-form" class="btn-volunteer">Apply Now</a>
+                    </div>
+
+                    <div class="opportunity-card">
+                        <div class="card-header">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span class="time-commitment">2-4 hours/week</span>
+                        </div>
+                        <h3>Skills Trainer</h3>
+                        <p>Share your professional skills to help others gain employment.</p>
+                        <ul class="requirements">
+                            <li><i class="fas fa-clock"></i> Flexible Schedule</li>
+                            <li><i class="fas fa-users"></i> 2+ years professional experience</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Training Center</li>
+                        </ul>
+                        <a href="#volunteer-form" class="btn-volunteer">Apply Now</a>
+                    </div>
+
+                    <div class="opportunity-card">
+                        <div class="card-header">
+                            <i class="fas fa-home"></i>
+                            <span class="time-commitment">6-12 hours/week</span>
+                        </div>
+                        <h3>Shelter Support</h3>
+                        <p>Assist in daily shelter operations and provide support to residents.</p>
+                        <ul class="requirements">
+                            <li><i class="fas fa-clock"></i> Evening/Weekend shifts</li>
+                            <li><i class="fas fa-users"></i> Background check required</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Multiple Locations</li>
+                        </ul>
+                        <a href="#volunteer-form" class="btn-volunteer">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="impact-section">
+            <div class="container">
+                <div class="impact-content">
+                    <h2>Volunteer Impact</h2>
+                    <div class="impact-stats">
+                        <div class="stat">
+                            <span class="number">25,000+</span>
+                            <p>Volunteer Hours</p>
+                        </div>
+                        <div class="stat">
+                            <span class="number">500+</span>
+                            <p>Active Volunteers</p>
+                        </div>
+                        <div class="stat">
+                            <span class="number">10,000+</span>
+                            <p>Lives Impacted</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="volunteer-form" class="volunteer-signup">
+            <div class="container">
+                <h2>Volunteer Application</h2>
+                <form class="signup-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName">First Name*</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interests">Areas of Interest*</label>
+                        <select id="interests" name="interests" required>
+                            <option value="">Select an opportunity</option>
+                            <option value="food-bank">Food Bank Assistant</option>
+                            <option value="skills-trainer">Skills Trainer</option>
+                            <option value="shelter">Shelter Support</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="availability">Availability*</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="availability[]" value="weekday-morning"> Weekday Mornings</label>
+                            <label><input type="checkbox" name="availability[]" value="weekday-afternoon"> Weekday Afternoons</label>
+                            <label><input type="checkbox" name="availability[]" value="weekday-evening"> Weekday Evenings</label>
+                            <label><input type="checkbox" name="availability[]" value="weekend"> Weekends</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Why do you want to volunteer?</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Submit Application</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer from index.html -->
+    
+    <script src="js/volunteer.js"></script>
+</body>
+</html> 

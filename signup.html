@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Hope Foundation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header same as index.html -->
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/hope-logo.png" alt="Hope Foundation Logo">
+                <span>Hope Foundation</span>
+            </div>
+            <div class="donate-button">
+                <a href="donate.html" class="btn-donate">Donate Now</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">Our Mission</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="signup-section">
+            <div class="signup-container">
+                <h2>Join Our Community</h2>
+                <p>Sign up to receive updates about our work and ways to get involved</p>
+                
+                <form class="signup-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Areas of Interest</label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="interests" value="volunteer">
+                                Volunteering
+                            </label>
+                            <label>
+                                <input type="checkbox" name="interests" value="donate">
+                                Donation Opportunities
+                            </label>
+                            <label>
+                                <input type="checkbox" name="interests" value="events">
+                                Events
+                            </label>
+                            <label>
+                                <input type="checkbox" name="interests" value="newsletter">
+                                Newsletter
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer same as index.html -->
+</body>
+</html> 
